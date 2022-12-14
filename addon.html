@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+ <meta charset="UTF-8">
+ <title>Доповнення</title>
+ <style>
+  @font-face {
+  font-family: Pompadur;
+  src: url(fonts/popmadur.ttf);
+  font-family: MarvenPro;
+  src: url();
+  }
+  body {
+  background-color: #080f13;
+  <!--background-repeat: no-repeat;-->
+  }
+  .navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+  .header {
+  padding: 50px;
+  text-align: center;
+  background: url(https://ssl.gstatic.com/atari/images/simple-header-blended.png);
+  <!--background-repeat: no-repeat;-->
+  color: #f9f9f9;
+  font-size: 50px;
+  }
+</style>
+ <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+</head>
+<body>
+<!--<body bgcolor="#080f13">-->
+<div class="header">
+ <h1>Доповнення</h1>
+</div>
+<div class="navbar">
+  <a href="#home">Home</a>
+  <a href="#news">News</a>
+  <div class="dropdown">
+    <button class="dropbtn">Dropdown 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div> 
+</div>
+<script src='snowfall.js'></script>
+ <script src="js/snowfall.js"></script>
+ <script type="text/javascript">
+  $(document).ready(function(){
+   $(document).snowfall({image: "images/snow.png", minSize: 10, maxSize: 20});
+  });
+ </script>
+<h2 style="font-family: Pompadur;"> <font color="#f9f9f9">Фан-журнал "ALICE"</font> </h2>
+ <br>
+<img src="images/alice_release.png" alt="ALICE Magazine Cover" width="300px;">
+ <br>
+<h2 style="font-family: Pompadur;"> <font color="#f9f9f9">ChangeLog</h2>
+ <br>
+<h3 style="font-family: Pompadur;">v.Beta <br>
+(changes) <br>
+<img src="Screenshot.jpg" width="250px;">
+ <br>
+v.1.0 - Release <br>
+(changes) <br>
+ <br>
+v.1.1.1 - Addon <br>
+(details) <br>
+ <br>
+</h3> </font>
+
+<footer> <p> <i> <center> <font color="#f9f9f9">Шкільний проект ~ megatenmusic.ua ~ 2022</font> </center> </i> </p> </footer>
+</body>
+</html>
